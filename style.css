@@ -49,6 +49,10 @@ header a:hover {
 
 /* -----------------------------------------------------------------hero */
 
+.hero button{
+    display: none;
+}
+
 .hero {
     display: flex;
     justify-content: space-between;
