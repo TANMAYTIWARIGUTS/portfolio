@@ -1,17 +1,16 @@
+
 :root {
     --primary-color: #0c0c12;
     --secondary-color: #141431;
     --accent-color: #facc15;
     --background: #0f172a;
     --textColor: #e5e7eb;
-    /* --textColor: #0055ff; */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
 }
 
 body {
@@ -23,12 +22,9 @@ body {
     color: var(--textColor);
     font-family: 'poppins';
     padding: 2.5% 4.5%;
-    /* width: 100vw; */
-    /* background-color: pink; */
 }
 
 /* -----------------------------------------------------------------header */
-
 header {
     display: flex;
     align-items: center;
@@ -43,43 +39,34 @@ header h1 {
 header a {
     text-decoration: none;
     color: var(--textColor);
+    font-size: 1.5vw;
     margin-left: 24px;
 }
 
-header i:hover {
+header a:hover {
     cursor: pointer;
 }
-
-header i {
-    font-size: 2vw;
-    display: inline-block;
-    transition: transform 0.3s ease;
-
-}
-
-header a:hover i {
-    transform: scale(1.2);
-    transform: scale(1.2);
-}
-
 
 
 /* -----------------------------------------------------------------hero */
 
+.hero button {
+    /* display: none; */
+}
 
 .hero {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-    width: 100%;
+    /* padding-top: 100px; */
 }
 
 .hero .left {
-    width: 55%;
+    width: 50%;
 }
 
 .hero .right {
-    width: 45%;
+    position: relative;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,25 +74,26 @@ header a:hover i {
 }
 
 .hero .right img {
-    width: 450px;
-    /* height: 400px; */
+    position: absolute;
+    width: 400px;
+    /* height: 60%; */
     border-radius: 50%;
     padding-left: 70px;
     padding-bottom: 50px;
 }
-
+@media ()
 
 .left h1 {
-    font-size: 135px;
+    font-size: 110px;
     width: 50%;
-    line-height: 120px;
+    line-height: 100px;
     font-weight: 200;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     text-shadow: 0 0 8px white;
 }
 
 .infoHead h4 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 300;
     background: linear-gradient(to right, yellow, white, rgb(0, 153, 255));
     -webkit-text-fill-color: transparent;
@@ -131,9 +119,8 @@ header a:hover i {
 }
 
 .left p {
-    width: 96%;
+    width: 70%;
     margin-top: 15px;
-    font-size: 20px;
 }
 
 hr {
@@ -142,8 +129,6 @@ hr {
     background-color: rgb(138, 138, 138);
     margin: 100px 0;
 }
-
-
 
 /* -----------------------------------------------------------------about */
 h3 {
@@ -164,7 +149,6 @@ h3 {
     margin-top: 60px;
     width: 100%;
     gap: 30px;
-    /* background-color: #facc15; */
     justify-content: center;
     /* align-items: self-start; */
 
@@ -197,12 +181,11 @@ h3 {
     height: 90px;
     width: 90px;
     padding: 11px;
-    margin: 10px 20px;
+    margin: 0 20px;
     box-shadow: 0 0 8px grey inset;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s ease 0s;
 }
 
 .tContainer .tItem:hover {
@@ -355,148 +338,6 @@ footer p:hover {
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
 
-
-
-@media (max-width:1280px){
-
-
-.hero .right img {
-    width: 450px;
-   
-}
-
-
-.left h1 {
-    font-size: 110px;
-    width: 50%;
-    line-height: 100px;
-    font-weight: 200;
-    margin-bottom: 35px;
-    text-shadow: 0 0 8px white;
-}
-
-.infoHead h4 {
-    font-size: 30px;
-    font-weight: 300;
-    background: linear-gradient(to right, yellow, white, rgb(0, 153, 255));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
-}
-
-.infoHead button {
-    padding: 6px 9px;
-    border-radius: 8px;
-    border: none;
-    background-color: rgb(0, 116, 194);
-}
-
-.infoHead button:active {
-    scale: 0.8;
-}
-
-.infoHead a {
-    font-size: 2.5vw;
-}
-
-.left p {
-    font-size: 14px;
-}
-
-/* ---------------------------------------about */
-
-.abo img {
-    height: 240px;
-    border-radius: 15px;
-    box-shadow: 0 0 18px black;
-
-}
-.abo p {
-    width: 50%;
-}
-
-/* ---------------------------------------projects laptop */
-
-.projContain {
-    margin-top: 50px;
-    background-image: url(/images/bg321.jpg);
-    /* background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 11px rgb(0, 0, 0);
-    border-radius: 35px;
-    padding: 50px 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.projContain a {
-    /* background-color: #facc15; */
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    width: 100%;
-}
-
-.projContain .item {
-    /* margin-top: 50px; */
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    background-color: #0000002b;
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    width: 70%;
-    padding: 25px;
-    /* box-shadow: 0 0 90px rgb(204, 204, 204); */
-    transition: all 0.3s ease-out 0s;
-}
-
-.projContain .item:hover {
-    background-color: rgba(20, 20, 49, 0.7);
-    backdrop-filter: unset;
-    scale: 1.2;
-    margin: 20px auto;
-}
-
-.item img {
-    width: 300px;
-    height: 170px;
-    box-shadow: 1px 1px 8px rgb(15, 15, 15);
-    border-radius: 10px;
-}
-
-.itemDet h5 {
-    font-size: 20px;
-}
-
-.itemDet p {
-    width: 80%;
-    margin-bottom: 12px;
-}
-
-.chip {
-    background-color: var(--textColor);
-    color: #0c0c12;
-    padding: 0 14px;
-    border-radius: 20px;
-    margin-right: 10px;
-}
-
-.projContain a {
-    text-decoration: none;
-    color: var(--textColor);
-}
-
-.projContain a:active {
-    scale: 0.8;
-}
-
-   
-}
 @media (max-width:500px) {
     body {
         padding: 2vh 8vw;
@@ -509,17 +350,14 @@ footer p:hover {
     }
 
     header a {
-        margin-left: 4px;
-    }
-    header i{
         font-size: 6vw;
-
+        margin-left: 4px;
     }
 
     /* hero */
 
     .hero {
-        /* padding-top: 10px; */
+        padding-top: 0;
         flex-direction: column-reverse;
     }
 
@@ -532,7 +370,7 @@ footer p:hover {
 
     .hero .right {
         width: 100%;
-        /* min-height: 220px; */
+        min-height: 220px;
     }
 
     .hero .right img {
@@ -540,11 +378,11 @@ footer p:hover {
         width: 45%;
         padding-left: 0;
         padding-bottom: 0;
-        margin-top: 0px;
+        margin-top: 40px;
     }
 
     .left h1 {
-        font-size: 28px;
+        font-size: 24px;
         text-align: center;
         width: 100%;
         line-height: 2;
