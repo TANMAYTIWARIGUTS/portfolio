@@ -521,6 +521,7 @@ footer p:hover {
     .hero {
         /* padding-top: 10px; */
         flex-direction: column-reverse;
+        margin-top:50px;
     }
 
     .hero .left {
@@ -549,6 +550,7 @@ footer p:hover {
         width: 100%;
         line-height: 2;
         margin-bottom: 0;
+        margin-top: 30px;
     }
 
     .infoHead {
@@ -572,7 +574,7 @@ footer p:hover {
         width: 90%;
         margin-top: 28px;
         text-align: center;
-        font-size: 9px;
+        font-size: 11px;
     }
 
     hr {
@@ -603,7 +605,7 @@ footer p:hover {
 
     .abo p {
         width: 100%;
-        font-size: 9px;
+        font-size: 11px;
         text-align: center;
     }
 
@@ -642,6 +644,12 @@ footer p:hover {
         align-items: center;
         width: 100%;
     }
+    .projContain .item:hover {
+    background-color: #0000002b;
+    backdrop-filter: blur(15px);
+    scale: 1;
+    margin: 0;
+}
 
     .projContain .item img {
         width: 250px;
