@@ -249,7 +249,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 0 11px rgb(0, 0, 0);
+    box-shadow: 0 0 11px rgb(0, 0, 0) inset;
     border-radius: 35px;
     padding: 50px 30px;
     display: flex;
@@ -356,7 +356,7 @@ footer p:hover {
 
 
 
-@media (max-width:1280px){
+@media (max-width:1400px){
 
 
 .hero .right img {
@@ -495,7 +495,7 @@ footer p:hover {
 
    
 }
-@media (max-width:500px) {
+@media (max-width:600px) {
     body {
         padding: 2vh 8vw;
     }
