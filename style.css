@@ -83,7 +83,7 @@ header a:hover i {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
 }
 
 .hero .right img {
@@ -281,8 +281,7 @@ h3 {
 }
 
 .projContain .item:hover {
-    background-color: #000000;
-    backdrop-filter: unset;
+    background-color: rgba(20, 20, 49, 0.7);
     scale: 1.2;
     margin: 20px auto;
 }
@@ -457,7 +456,6 @@ footer p:hover {
 
 .projContain .item:hover {
     background-color: rgba(20, 20, 49, 0.7);
-    backdrop-filter: unset;
     scale: 1.2;
     margin: 20px auto;
 }
