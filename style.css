@@ -156,11 +156,12 @@ h3 {
 .about {
     width: 100%;
     min-height: 450px;
-
+   
 }
 
 .abo {
     display: flex;
+    align-items: center;
     margin-top: 60px;
     width: 100%;
     gap: 30px;
